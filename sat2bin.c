@@ -19,7 +19,7 @@ int main(int argc, char **argv)
     assert(sat != NULL);
     char *line = calloc(LINESIZE+2, sizeof(char));
     if (argc == 2 &&
-        (strncmp(argv[1], "--help", 6) || strncmp(argv[1], "-h", 2)))
+        (strncmp(argv[1], "--help", 6) == 0 || strncmp(argv[1], "-h", 2) == 0))
     {
         fprintf(stderr, "Usage: %s < sat > bin\n\n", argv[0]);
         free(sat);

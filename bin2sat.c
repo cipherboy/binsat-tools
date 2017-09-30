@@ -12,7 +12,7 @@ int main(int argc, char **argv)
     ssize_t result;
     memset(buffer, 0, 8*sizeof(char));
     if (argc == 2 &&
-        (strncmp(argv[1], "--help", 6) || strncmp(argv[1], "-h", 2)))
+        (strncmp(argv[1], "--help", 6) == 0 || strncmp(argv[1], "-h", 2) == 0))
     {
         fprintf(stderr, "Usage: %s < bin > sat\n\n", argv[0]);
         return 0;
