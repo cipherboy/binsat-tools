@@ -53,6 +53,7 @@ dkms.conf
 
 # Executables
 bin2sat
+bin2bcsoln
 sat2bin
 
 # Test stages
