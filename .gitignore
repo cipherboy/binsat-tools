@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Executables
+bin2sat
+sat2bin
+
+# Test stages
+.tmp
